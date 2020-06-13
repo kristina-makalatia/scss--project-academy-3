@@ -1,0 +1,39 @@
+.wraper {
+    background: $color01;
+    padding: $size01;
+    @include d-flex (flex, space-between, center);
+    @media screen and (max-width: 600px) {
+        @include d-flex (flex, center, center);
+    }
+    @media screen and (max-width: $break-medium) {
+        background: $color02;
+    }
+    @media screen and (max-width: $break-small) {
+        background: $color-red;
+    }
+    .test1 {
+        color: aqua;
+        margin-bottom: $size01;
+        font-family: $font01;
+        @include transition1 (all, 0.2s, ease, 0.2s);
+        @include border (2px, solid, pink);
+        // @media screen and (max-width: 650px) {
+        //     @include border (2px, dashed, yellow);
+        // }
+        &:hover {
+            color: $color-red;
+        }
+
+    }
+    .test2 {
+        color: $color03;
+        padding: $size02;
+        @include border (2px, dashed, purple);
+    }
+
+}
+.wraper2 {
+    @extend %size;
+    @include d-flex (flex, center, center);
+    color: $color01;
+}

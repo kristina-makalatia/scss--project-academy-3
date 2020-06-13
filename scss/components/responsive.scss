@@ -1,0 +1,12 @@
+@media (max-width: $break-medium) {
+    .wraper {
+        .test1 {
+            color: black;
+            @include border (2px, dashed, yellow);          
+        }
+        .test2 {
+            color: red;
+        }
+    }
+   
+}

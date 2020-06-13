@@ -1,0 +1,19 @@
+@mixin d-flex ($display, $justify, $align) {
+    display: $display;
+    justify-content: $justify;
+    align-items:  $align;
+}
+
+@mixin transition1 ($property, $duration, $type, $delay) {
+    // transition-property: $property;
+    // transition-duration: $duration;
+    // transition-timing-function: $type;
+    // transition-delay: $delay; 
+
+    transition: $property $duration $type $delay;
+    // transition: all 0.2s ease 2s;
+}
+
+@mixin border ($size, $type, $color) {
+    border: $size $type $color;
+}
